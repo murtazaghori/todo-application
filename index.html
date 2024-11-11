@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Authentication</title>
+    <!-- Use the latest version of Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form id="signupForm">
+        <h2>Signup Form</h2>
+        <input type="text" id="name" placeholder="Enter name" required>
+        <br><br>
+        <input type="email" id="email" placeholder="Enter email" required>
+        <br><br>
+        <input type="password" id="password" placeholder="Enter password" required>
+        <br><br>
+        <button type="submit">Sign up</button>
+    </form>
+</div>
+
+<!-- Add the Firebase script -->
+<script src="firebase.js"></script>
+
+<script>
+    // Attach the event listener to the form submission
+    document.getElementById("signupForm").addEventListener("submit", signIn);
+</script>
+
+</body>
+</html>

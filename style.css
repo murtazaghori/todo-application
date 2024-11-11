@@ -1,0 +1,32 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .todo-container {
+    margin-bottom: 20px;
+  }
+  
+  #todoInput {
+    padding: 10px;
+    width: 300px;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  
